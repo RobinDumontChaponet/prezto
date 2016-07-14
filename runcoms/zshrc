@@ -11,3 +11,18 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+
+# FileSearch
+function f() { find . -iname "*$1*" ${@:2} }
+function r() { grep "$1" ${@:2} -R . }
+
+#mkdir and cd
+function mkcd() { mkdir -p "$@" && cd "$_"; }
+
+# Aliases
+alias cppcompile='c++ -std=c++11 -stdlib=libc++'
+
+
+setopt RM_STAR_WAIT
+

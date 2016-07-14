@@ -14,6 +14,20 @@
   fi
 } &!
 
+
+# Print the message.
+cat <<-EOF
+
+----------------------------
+Hello there ! 
+
+If you're here by mistake (yours or mine) could you get out please ? Thank you very much !
+Have a good day.
+  -- r-dc_/obsoletespace_
+----------------------------_
+EOF
+
+
 # Print a random, hopefully interesting, adage.
 if (( $+commands[fortune] )); then
   if [[ -t 0 || -t 1 ]]; then
